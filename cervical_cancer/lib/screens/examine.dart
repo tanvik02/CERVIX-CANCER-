@@ -6,14 +6,14 @@ import 'package:image_picker/image_picker.dart';
 
 
 
-class Pres extends StatefulWidget {
-  const Pres({Key? key}) : super(key: key);
+class Upload extends StatefulWidget {
+  const Upload({Key? key}) : super(key: key);
 
   @override
-  State<Pres> createState() => _PresState();
+  State<Upload> createState() => _UploadState();
 }
 
-class _PresState extends State<Pres> {
+class _UploadState extends State<Upload> {
   bool textScanning = false;
 
   XFile? imageFile;
@@ -151,15 +151,15 @@ class _PresState extends State<Pres> {
       final pickedImage =
       await ImagePicker().pickImage(source: source);
       if (pickedImage != null){
-        textScanning =true;
+        //textScanning =true;
         imageFile = pickedImage;
         setState(() { });
-        getRecognisedText(pickedImage);
+        //getRecognisedText(pickedImage);
       }
 
     }
     catch (e) {
-      textScanning =false;
+      //textScanning =false;
       imageFile = null;
       setState(() { });
       scannedText ="Error occured  while scanning";
@@ -168,7 +168,7 @@ class _PresState extends State<Pres> {
 
   void getRecognisedText(XFile image) async {
     final inputImage = InputImage.fromFilePath(image.path);
-    final textDetector = GoogleMlKit.vision.textRecognizer();
+    /*final textDetector = GoogleMlKit.vision.textRecognizer();
     RecognizedText recognisedText = await textDetector.processImage(inputImage);
     await textDetector.close();
     scannedText = "";
@@ -177,7 +177,7 @@ class _PresState extends State<Pres> {
         scannedText = scannedText + line.text + "\n";
       }
     }
-    textScanning = false;
+    textScanning = false;*/
     setState(() {});
   }
 

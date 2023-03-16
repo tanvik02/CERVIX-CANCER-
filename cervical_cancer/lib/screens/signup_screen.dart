@@ -43,7 +43,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.fromLTRB(
-                20, MediaQuery.of(context).size.height * 0.2, 20, 200) ,
+                20, MediaQuery.of(context).size.height * 0.2, 20, 0) ,
             child: Column(
               children: <Widget>[
                 logoWiget("assets/images/user-circle-regular-84.png"),

@@ -1,5 +1,6 @@
 
 import 'dart:io';
+import 'package:cervical_cancer/screens/examine.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cervical_cancer/screens/signin.dart';
@@ -62,7 +63,7 @@ class Homepage extends StatelessWidget {
         Navigator.push(
         context,
         MaterialPageRoute(
-        builder: (context) => examine_page()));
+        builder: (context) => Upload()));
       },
       style: ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(20.0),
@@ -78,12 +79,12 @@ class Homepage extends StatelessWidget {
       SizedBox(
         height: 20, // <-- SEE HERE
       ),
-
+/*
       ElevatedButton.icon(onPressed:(){
       Navigator.push(
       context,
       MaterialPageRoute(
-      builder: (context) => examine_page()));
+      builder: (context) => Upload()));
       },
       style: ElevatedButton.styleFrom(
       padding: const EdgeInsets.all(20.0),
@@ -93,7 +94,7 @@ class Homepage extends StatelessWidget {
       textStyle: const TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
       ),
       icon:Icon(Icons.people),
-      label: Text("Upload Images"))
+      label: Text("Upload Images"))*/
       ],
       ),
       ),
@@ -221,7 +222,7 @@ child: Text('record page'),
 );
 }
 
-}*/
+}x
 
 class examine_page extends StatelessWidget {
 const examine_page({super.key});
@@ -249,3 +250,4 @@ child: Text('Examine Page'),
 }
 
 }
+*/
